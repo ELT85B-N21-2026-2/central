@@ -46,13 +46,3 @@ body:
       options:
         - label: Confirmo que o username e o grupo informados estão corretos.
           required: true
-
-  - type: markdown
-    attributes:
-      value: |
-        ---
-        ### Instruções para o administrador
-        1. Abra a aba de membros do time correspondente ao slug informado:
-           `https://github.com/orgs/ELT85B-N21-2026-2/teams/<slug>/members`
-        2. Adicione o username informado ao time.
-        3. Feche esta issue.
