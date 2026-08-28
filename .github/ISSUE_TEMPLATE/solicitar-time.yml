@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Solicitação de inclusão em time
+        ## Solicitação de inclusão em Grupo
         Preencha os campos abaixo para ser adicionado(a) ao seu grupo na organização **`ELT85B-N21-2026-2`**.
         Após o envio, um administrador irá adicionar você ao time e fechar esta issue.
 
@@ -44,7 +44,7 @@ body:
     attributes:
       label: Confirmação
       options:
-        - label: Confirmo que o username informado está correto e é o meu.
+        - label: Confirmo que o username e o grupo informados estão corretos.
           required: true
 
   - type: markdown
