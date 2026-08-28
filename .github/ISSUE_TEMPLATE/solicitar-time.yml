@@ -1,0 +1,58 @@
+name: Solicitar inclusão em time
+description: Peça para ser adicionado(a) a um time (grupo) da organização.
+title: "[Time] Inclusão no grupo"
+labels: ["inclusao-time"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Solicitação de inclusão em time
+        Preencha os campos abaixo para ser adicionado(a) ao seu grupo na organização **`ELT85B-N21-2026-2`**.
+        Após o envio, um administrador irá adicionar você ao time e fechar esta issue.
+
+  - type: dropdown
+    id: grupo
+    attributes:
+      label: Grupo (slug do time)
+      description: Selecione o slug do grupo ao qual você pertence.
+      options:
+        - grupo-a
+        - grupo-b
+        - grupo-c
+        - grupo-d
+        - grupo-e
+        - grupo-f
+        - grupo-g
+        - grupo-h
+        - grupo-i
+        - grupo-j
+        - grupo-p
+    validations:
+      required: true
+
+  - type: input
+    id: username
+    attributes:
+      label: Seu username do GitHub
+      description: Informe seu nome de usuário do GitHub, sem o "@".
+      placeholder: "ex: octocat"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmacao
+    attributes:
+      label: Confirmação
+      options:
+        - label: Confirmo que o username informado está correto e é o meu.
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ### Instruções para o administrador
+        1. Abra a aba de membros do time correspondente ao slug informado:
+           `https://github.com/orgs/ELT85B-N21-2026-2/teams/<slug>/members`
+        2. Adicione o username informado ao time.
+        3. Feche esta issue.
